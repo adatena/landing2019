@@ -16,6 +16,11 @@ html, body, h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
+.justified {
+  text-align: justify;
+  text-justify: inter-character;
+}
+
 .clickable:hover {
   color:#ff0000;
 }
@@ -38,7 +43,7 @@ src: local('Bahnschrift Regular'), url('BAHNSCHRIFT.woff') format('woff');
 <div class="w3-container">
 
   <!-- Header -->
-  <div class="w3-row-padding w3-section">
+  <div class="w3-row w3-section">
 
     <!-- Logo left -->
     <div class="w3-container w3-col w3-center w3-hide-small w3-hide-medium l3">
@@ -104,7 +109,7 @@ src: local('Bahnschrift Regular'), url('BAHNSCHRIFT.woff') format('woff');
       </div>
   
       <div class="w3-container w3-col l6 w3-center">
-      <h3>IL <span class="text-red" > 17 MAGGIO </span>, IL MIX SARÀ ALL' ANTEO PALAZZO DEL CINEMA PER LA GIORNATA INTERNAZIONALE CONTRO L'OMOFOBIA, LA LESBOFOBIA, LA BIFOBIA E LA TRANSFOBIA. NON MANCARE!</h3>
+      <h3>IL <span class="text-red justified" > 17 MAGGIO </span>, IL MIX SARÀ ALL' ANTEO PALAZZO DEL CINEMA PER LA GIORNATA INTERNAZIONALE CONTRO L'OMOFOBIA, LA LESBOFOBIA, LA BIFOBIA E LA TRANSFOBIA. NON MANCARE!</h3>
       </div>
   
       <div class="w3-container w3-col l3 w3-hide-small w3-hide-medium">
@@ -120,7 +125,7 @@ src: local('Bahnschrift Regular'), url('BAHNSCHRIFT.woff') format('woff');
         <p> </p>
       </div>
   
-      <div class="w3-container w3-col l6 w3-black w3-round-xlarge  w3-center">
+      <div class="w3-container w3-col l6 w3-black w3-round-xlarge w3-center justified" >
       <h3>
           SEGUI I NOSTRI SOCIAL E ISCRIVITI ALLA NEWSLETTER PER 
           MAGGIORI INFORMAZIONI</h3>
@@ -131,13 +136,14 @@ src: local('Bahnschrift Regular'), url('BAHNSCHRIFT.woff') format('woff');
       </div>
 
     </div> 
-  
+  <!-- Newsletter and links -->
   <div class="w3-container w3-section w3-row-padding">
  
     <div class="w3-container w3-col l3 w3-hide-small w3-hide-medium" >
       <p> </p>
     </div>
 
+    <!-- Newsletter -->
     <div class="w3-container w3-col l3" style="padding-bottom: 16px" >
         <form action="http://a1e6c4.mailupclient.com/frontend/subscribe.aspx">
           <div >
@@ -156,7 +162,8 @@ src: local('Bahnschrift Regular'), url('BAHNSCHRIFT.woff') format('woff');
           
           <input type="hidden" id="apgroup" name="apgroup" value="8"></form>
     </div>
-
+    
+    <!-- ext links -->
     <div class="w3-container w3-col l1 s4 w3-center" >
         <a href="https://www.facebook.com/FestivalMixMilano/" target="_blank"> 
           <img src="facebooklogo.png" style="width:100%; max-width:100px;"></img>
@@ -184,6 +191,7 @@ src: local('Bahnschrift Regular'), url('BAHNSCHRIFT.woff') format('woff');
 
 </div>
 
+<!-- Privacy Modal -->
 <div class="w3-modal" id="modal1">
   <div class="w3-modal-content">
     <div class="w3-container">
