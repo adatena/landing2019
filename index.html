@@ -132,27 +132,29 @@ html, body, h1, h2, h3, h4, h5, h6 {
   <div class="w3-container w3-col l3" style="padding-bottom: 16px" >
     <form action="http://a1e6c4.mailupclient.com/frontend/subscribe.aspx">
       <div >
-      <h1 >NEWSLETTER</h1>
+        <h4 >NEWSLETTER</h4>
       </div>
       <div>
-      <label for="1" >Email*</label>
-      <input type="email" name="email" id="email" placeholder="Inserisci la tua email" required="required">
-      <p >Quando invii il modulo, controlla la tua inbox per confermare l'iscrizione</p>
+        <label for="1" >Email</label>
+        <input type="email" name="email" id="email" placeholder="Inserisci qui la tua email" required="required">
+        <p class="smallnote">Iscrivendoti alla newsletter acconsenti al trattamento dei dati personali ai sensi della legge 
+          n. 196/2003 e del Regolamento Ue n. 679/2016 .
+          Per ulteriori informazioni, <span onclick="document.getElementById('modal1').style.display='block'" class="clickable">clicca qui </span> </p>
       </div>
       <div>
-      <label for="2" >Privacy*</label>
-      <div >
-      <label><input type="checkbox" name="privacy" required="required">Accetto la </label> <a target="_blank" href="http://"> Privacy Policy</a>
-      </div>
+        <label><input type="checkbox" name="privacy" required="required">Accetto la </label> <span onclick="document.getElementById('modal1').style.display='block'" class="clickable">Privacy Policy</span>
       </div>
       <div>
-      <button type="submit" name="submit" value="true" >
-      INVIA
-      </button>
+        <button type="submit" name="submit" value="true">
+          INVIA
+        </button>
       </div>
-      <input type="hidden" name="list" value="2">
       
-      <input type="hidden" id="apgroup" name="apgroup" value="18"></form>
+      <input type="hidden" name="list" value="2">
+  
+      <input type="hidden" id="apgroup" name="apgroup" value="18">
+
+    </form>
   </div>
 
   <!-- Newsletter 
