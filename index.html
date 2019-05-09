@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Mix Milano</title>
+<title>Festival Mix Milano</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="w3.css">
@@ -156,26 +156,6 @@ html, body, h1, h2, h3, h4, h5, h6 {
 
     </form>
   </div>
-
-  <!-- Newsletter 
-  <div class="w3-container w3-col l3" style="padding-bottom: 16px" >
-      <form action="http://a1e6c4.mailupclient.com/frontend/subscribe.aspx">
-        <div >
-        <h4><label for="0">Newsletter <br></label></h4>
-        <input type="email" name="email" id="email" placeholder="Email" required="required">
-        <p class="smallnote">Iscrivendoti alla newsletter acconsenti al trattamento dei dati personali ai sensi della legge 
-          n. 196/2003 e del Regolamento Ue n. 679/2016 .
-            Per ulteriori informazioni, <span onclick="document.getElementById('modal1').style.display='block'" class="clickable">clicca qui </span> </p>
-        </div>
-        <div>
-        <button type="submit" name="submit" value="true" >
-        INVIA
-        </button>
-        </div>
-        <input type="hidden" name="list" value="1">
-        
-        <input type="hidden" id="apgroup" name="apgroup" value="8"></form>
-  </div>-->
   
   <!-- ext links -->
   <div class="w3-container w3-col l1 s4 w3-center w3-hover-opacity" >
@@ -278,29 +258,29 @@ html, body, h1, h2, h3, h4, h5, h6 {
 </body>
 
 <script>
-      // Set the date we're counting down to
+      
       var countDownDate = new Date("Jun 20, 2019 00:00:00").getTime();
       
-      // Update the count down every 1 second
+      
       var x = setInterval(function() {
       
-        // Get todays date and time
+        
         var now = new Date().getTime();
           
-        // Find the distance between now and the count down date
+        
         var distance = countDownDate - now;
           
-        // Time calculations for days, hours, minutes and seconds
+        
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
           
-        // Output the result in an element with id="demo"
+        
         document.getElementById("demo").innerHTML = days + " giorni, " + hours + " ore, "
         + minutes + " minuti, " + seconds + " secondi ";
           
-        // If the count down is over, write some text 
+        
         if (distance < 0) {
           clearInterval(x);
           document.getElementById("demo").innerHTML = "EXPIRED";
